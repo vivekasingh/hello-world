@@ -1,4 +1,16 @@
 spring:
+  application:
+    name: helloworld
+
+---
+spring:
+  profiles: development
+  datasource:
+    url: jdbc:mysql://root:@localhost:3306/hello_world
+
+---
+spring:
+  profiles: production
   datasource:
     url: ${JAWSDB_URL}
-#   url: jdbc:mysql://root:@localhost:3306/hello_world
+
