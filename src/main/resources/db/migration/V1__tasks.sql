@@ -1,0 +1,5 @@
+CREATE TABLE tasks (
+	id BIGINT(20) NOT NULL AUTO_INCREMENT,
+	name VARCHAR(200) NOT NULL,
+	PRIMARY KEY(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='This table stores tasks information'
