@@ -16,4 +16,4 @@ VOLUME /tmp
 
 COPY --from=builder build/libs/hello-world-*.jar /app/app.jar
 
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "${JAVA_OPTS:-}", "-jar", "app.jar"]

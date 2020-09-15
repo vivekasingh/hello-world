@@ -14,3 +14,10 @@ spring:
   datasource:
     url: ${JAWSDB_URL}
 
+---
+spring:
+  profiles: aws-production
+  datasource:
+    url: jdbc:mysql://admin:monkey55@database-1.cyyrsyljuwjo.us-west-1.rds.amazonaws.com:3306/hello_world
+
+
